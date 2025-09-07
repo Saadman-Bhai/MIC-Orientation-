@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Club Orientation 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            background-color: #0d0426;
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(97.78deg, #B5B2FF 37.19%, #6889FF 57.52%, #7000FF 77.85%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem;
+            overflow: hidden;
+        }
+
+        /* Particles */
+        #particles-js {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Timeline */
+        .timeline-container {
+            position: relative;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .timeline-content-box {
+            padding: 24px;
+            background: linear-gradient(141.81deg, rgba(104, 137, 255, 0.06) 22.02%, #030014 82.6%);
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 14px;
+            height: 14px;
+            background: #4e19ff;
+            border-radius: 50%;
+            z-index: 10;
+            border: 2px solid rgba(175, 126, 255, 0.5);
+            box-shadow: 0 0 10px rgba(175, 126, 255, 0.75), 0 0 20px rgba(175, 126, 255, 0.5);
+        }
+
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: #4e19ff;
+            z-index: 1;
+        }
+
+        .time-badge {
+            background: #1C234C;
+        }
+
+        .nav-button {
+            background-color: #D0DAFFCC;
+            border: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+            border-radius: 9999px;
+            color: white;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+        }
+
+        .nav-button:hover {
+            background: linear-gradient(97.78deg, #B5B2FF 37.19%, #6889FF 57.52%, #7000FF 77.85%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 14px rgba(112, 0, 255, 0.3);
+            border: 2px solid #6889FF;
+        }
+
+        .arrow-down-animation {
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+    </style>
+</head>
+<body class="text-white">
+
+    <!-- Particles background -->
+    <div id="particles-js"></div>
+
+    <header class="p-4 md:p-6 lg:p-8 flex justify-center items-center z-20 relative">
+        <nav class="flex justify-center space-x-2 md:space-x-4">
+            <a href="#hero" class="nav-button">HOME</a>
+            <a href="#schedule" class="nav-button">Schedule</a>
+            <a href="#events" class="nav-button">Events</a>
+            <a href="#about-us" class="nav-button">About Us</a>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section id="hero">
+            <img src="MIC_White.png" alt="Innovation Club Logo" class="rounded-lg mb-8 max-w-xs">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2 gradient-text">
+                Welcome to<br>INNOVATION CLUB<br>ORIENTATION 2025!
+            </h1>
+            <p class="text-lg md:text-xl font-medium gradient-text">INNOVATE TO SERVE</p>
+
+            <!-- Scroll down arrow -->
+            <a href="#about-orientation" class="arrow-down-animation mt-12">
+                <svg class="w-12 h-12 text-white mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Orientation Section -->
+        <div class="w-full relative py-16 px-4 md:px-8 lg:px-16" style="backdrop-filter: blur(10px); background-color: rgba(13, 4, 38, 0.5);">
+            <section id="about-orientation" class="max-w-4xl mx-auto text-center mb-24">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">ABOUT THE ORIENTATION</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto mb-16">
+                    Join us for an exciting day of discovery, learning, and connection. Our orientation program is designed to introduce you to everything Innovation Club has to offer.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <svg class="w-16 h-16 mb-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 012-2V7a2 2 0 01-2-2H5a2 2 0 01-2 2v12a2 2 0 012 2z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-2">Date</h3>
+                        <p class="text-sm text-gray-400">Saturday, <br> 25th September, 2025</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <svg class="w-16 h-16 mb-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-2">Time</h3>
+                        <p class="text-sm text-gray-400">11:40 - 2:30</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <svg class="w-16 h-16 mb-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mb-2">Venue</h3>
+                        <p class="text-sm text-gray-400">Auditorium</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section id="events" class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-24">
+                <div class="bg-white bg-opacity-5 p-8 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 mb-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm8 2c-1.84 0-5.5.91-5.5 2.75V18h11v-2.25c0-1.84-3.66-2.75-5.5-2.75zm-8 0c-1.84 0-5.5.91-5.5 2.75V18H13v-2.25c0-1.84-3.66-2.75-5.5-2.75z"/>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Meet New People</h3>
+                    <p class="text-sm text-gray-400">Connect with like-minded tech enthusiasts and build lasting friendships</p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-8 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 mb-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 2H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 16H10V4h8v14zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"/>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Learn Club Activities</h3>
+                    <p class="text-sm text-gray-400">Discover our workshops, hackathons, and exciting project opportunities</p>
+                </div>
+                <div class="bg-white bg-opacity-5 p-8 rounded-xl shadow-lg flex flex-col items-center">
+                    <svg class="w-16 h-16 mb-4 text-purple-400" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-4 7h8v2H8V9zm8 4H8v2h8v-2z"/>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2">Free Food & Fun</h3>
+                    <p class="text-sm text-gray-400">Enjoy complimentary refreshments and engaging networking activities</p>
+                </div>
+            </section>
+
+           <!-- Orientation Schedule Section -->
+                <section id="schedule" class="max-w-xl mx-auto text-center mb-24">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Orientation Schedule</h2>
+                    <p class="text-gray-300 mb-12">Here's what you can expect during our exciting orientation day. All times are approximate and may vary slightly.</p>
+                    <div class="timeline-container relative">
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Tea Break (Food Distribution)</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">11:40AM-12:00PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Arrival of the Chief Guest</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:00PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Welcome Speech</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:00PM-12:05PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Recitation from Holy Quran</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:05PM-12:10PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Promo Video & MIC president speech</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:10PM-12:25PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Game</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:25PM-12:40PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Cultural Segment</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">12:40PM-1:00PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Robo Soccer</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">1:00PM-1:15PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Award Giving Ceremony</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">1:15PM-1:25PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Chief Guest Speech</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">1:25PM-1:35PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Photo Session</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">1:35PM-1:40PM</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content-box">
+                                <span class="text-base font-medium">Learning Session by Programming Hero</span>
+                                <span class="text-sm text-gray-400 md:text-base md:font-semibold time-badge py-1 px-3 rounded-full">1:40PM-2:25PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- About Innovation Club Section -->
+                <section id="about-us" class="max-w-3xl mx-auto text-center mb-24">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">About <br> Innovation Club</h2>
+                    <div class="bg-white bg-opacity-5 p-8 rounded-xl">
+                        <p class="text-gray-300">
+                            MIST Innovation Club, established earlier this year is the fastest growing club in here at MIST. With the goal to become one of the biggest technical platforms in the country, MIST Innovation is actively engaged in the fields of skill development. Public speaking, Programming language, Digital design and Technological innovation. MIC is under the coordination of talented students from all Department of this institution dedicated to the success and development of this club. The club is also under the mentorship of professional individuals who constantly guide the member towards greater innovation. MIST Innovation Club was built on some fundamental principles.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <!-- JavaScript for particles -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            let animationFrameId;
+
+            // Function to handle canvas resizing
+            const resizeCanvas = () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                particles = [];
+                createParticles();
+            };
+
+            const createParticles = () => {
+                for (let i = 0; i < 100; i++) {
+                    particles.push(new Particle());
+                }
+            };
+
+            function Particle() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.vx = Math.random() * 0.5 - 0.25;
+                this.vy = Math.random() * 0.5 - 0.25;
+                this.radius = Math.random() * 1.5 + 0.5;
+                this.color = `rgba(255, 255, 255, ${Math.random() * 0.5 + 0.1})`;
+            }
+
+            function drawParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.globalAlpha = 1;
+
+                particles.forEach(p => {
+                    // Update position
+                    p.x += p.vx;
+                    p.y += p.vy;
+
+                    // Boundary check
+                    if (p.x < 0 || p.x > canvas.width) p.vx = -p.vx;
+                    if (p.y < 0 || p.y > canvas.height) p.vy = -p.vy;
+
+                    // Draw particle
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color;
+                    ctx.fill();
+                });
+
+                // Connect particles
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dist = Math.sqrt(Math.pow(particles[i].x - particles[j].x, 2) + Math.pow(particles[i].y - particles[j].y, 2));
+                        if (dist < 100) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(255, 255, 255, ${1 - dist / 100})`;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                animationFrameId = requestAnimationFrame(drawParticles);
+            }
+
+            // Set up canvas and start animation on window load
+            const particlesContainer = document.getElementById('particles-js');
+            particlesContainer.appendChild(canvas);
+
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+            drawParticles();
+        });
+    </script>
+</body>
+</html>
